@@ -98,6 +98,11 @@ DETECTION_MODELS=(
     "https://huggingface.co/Kijai/vitpose_comfy/resolve/main/onnx/vitpose_h_wholebody_model.onnx"
     "https://huggingface.co/Kijai/vitpose_comfy/resolve/main/onnx/vitpose_h_wholebody_data.bin"
 )
+
+CONTROLNET_MODELS=(
+    "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Wan21_Uni3C_controlnet_fp16.safetensors"
+)
+
 # ─────────────────────────────────────────────
 # 4. FUNCTIONS
 # ─────────────────────────────────────────────
@@ -139,14 +144,13 @@ for repo in "${NODES[@]}"; do
 done
 
 # ─────────────────────────────────────────────
-# 6. Download models (ПРАВИЛЬНЫЕ ПУТИ)
+# 6. Download models
 # ─────────────────────────────────────────────
-
 mkdir -p models/detection
+mkdir -p models/controlnet   # ← новая папка
 
 download_files "models/diffusion_models" "${WAN_JSON_MODELS[@]}"
 download_files "models/diffusion_models" "${WAN_FP8_MODELS[@]}"
-
 download_files "models/loras" "${LORA_MODELS[@]}"
 download_files "models/vae" "${VAE_MODELS[@]}"
 download_files "models/clip_vision" "${CLIP_VISION_MODELS[@]}"
@@ -158,6 +162,7 @@ download_files "models/text_encoders" "${TEXT_ENCODER_FP8[@]}"
 download_files "models/vae" "${VAE_MODELS_NEW[@]}"
 download_files "models/clip_vision" "${CLIP_VISION_NEW[@]}"
 download_files "models/detection" "${DETECTION_MODELS[@]}"
+download_files "models/controlnet" "${CONTROLNET_MODELS[@]}"   # ← скачивание
 
 # ─────────────────────────────────────────────
 # 7. Launch
