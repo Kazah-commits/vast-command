@@ -38,7 +38,7 @@ NODES=(
     "https://github.com/kijai/ComfyUI-WanAnimatePreprocess"
     "https://github.com/Fannovel16/comfyui_controlnet_aux"
     "https://github.com/GACLove/ComfyUI-VFI"
-    "https://github.com/Kazah-commits/Kazahstan-nodes"
+    "https://github.com/Kazah-commits/SuperNodes"
 )
 
 WAN_JSON_MODELS=(
