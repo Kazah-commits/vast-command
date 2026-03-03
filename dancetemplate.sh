@@ -32,7 +32,7 @@ NODES=(
     "https://github.com/ltdrdata/ComfyUI-Manager"
     "https://github.com/kijai/ComfyUI-WanVideoWrapper"
     "https://github.com/rgthree/rgthree-comfy"
-    "https://github.com/Kazah-commits/NodesBakumiko"
+    "https://github.com/Kazah-commits/SuperPuperNodes"
     "https://github.com/kijai/ComfyUI-KJNodes"
     "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite"
     "https://github.com/kijai/ComfyUI-WanAnimatePreprocess"
