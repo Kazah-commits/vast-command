@@ -46,7 +46,7 @@ CKPT_MODELS=(
     "https://huggingface.co/cyberdelia/CyberRealisticPony/resolve/main/CyberRealisticPony_V15.0_FP32.safetensors"
 )
 
-FUN_MODELS=(
+PROMPT_GENERATOR_MODELS=(
     "https://huggingface.co/arhiteector/zimage/resolve/main/Z-Image-Turbo-Fun-Controlnet-Union.safetensors"
 )
 
