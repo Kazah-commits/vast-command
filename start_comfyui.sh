@@ -46,7 +46,7 @@ CKPT_MODELS=(
     "https://huggingface.co/cyberdelia/CyberRealisticPony/resolve/main/CyberRealisticPony_V15.0_FP32.safetensors"
 )
 
-PROMPT_GENERATOR_MODELS=(
+MODEL_PATCHES_MODELS=(
     "https://huggingface.co/arhiteector/zimage/resolve/main/Z-Image-Turbo-Fun-Controlnet-Union.safetensors"
 )
 
@@ -96,7 +96,7 @@ function provisioning_start() {
     provisioning_install_base_reqs
     provisioning_get_nodes
     provisioning_get_pip_packages
-    provisioning_get_files "${COMFYUI_DIR}/models/prompt_generator" "${PROMPT_GENERATOR_MODELS[@]}"
+    provisioning_get_files "${COMFYUI_DIR}/models/model_patches" "${MODEL_PATCHES_MODELS[@]}"
     provisioning_get_files "${COMFYUI_DIR}/models/clip" "${CLIP_MODELS[@]}"
     provisioning_get_files "${COMFYUI_DIR}/models/text_encoders" "${TEXT_ENCODERS[@]}"
     provisioning_get_files "${COMFYUI_DIR}/models/unet" "${UNET_MODELS[@]}"
